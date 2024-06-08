@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://psql.sl-grp.ru:5432/afisha
+    url: jdbc:postgresql://10.227.12.11:5432/afisha
     username: user
     password: 7518855
     driver-class-name: org.postgresql.Driver
