@@ -11,12 +11,10 @@ import javax.sql.DataSource;
 
 @Component
 @RequiredArgsConstructor
-//@Profile("first")
 public class InitDbTest {
     private final DataSource dataSource;
 
     @PostConstruct
-//    @Bean
     public void initDb() {
         ResourceDatabasePopulator resourceDatabasePopulator = new ResourceDatabasePopulator();
         resourceDatabasePopulator.addScript(new ClassPathResource("init.sql"));
